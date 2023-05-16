@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+  </head>
+  <body>
+    <button type="button" id="openGoogle">Google</button>
+    <button type="button" id="openW3Schools">W3Schools</button>
+    <button type="button" id="openImages">Images</button>
+
+    <script>
+      const googleButton = document.getElementById("openGoogle");
+      googleButton.onclick = () => {
+        window.open("https://google.com");
+      };
+
+      const w3SchoolsBtn = document.getElementById("openW3Schools");
+      w3SchoolsBtn.onclick = () => {
+        window.open("https://w3schools.com/js");
+      };
+
+      const imagesPageBtn = document.getElementById("openImages");
+      imagesPageBtn.onclick = () => {
+        location.href = "./images.html";
+      };
+    </script>
+  </body>
+</html>
